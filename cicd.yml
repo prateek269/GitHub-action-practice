@@ -4,23 +4,23 @@ on:
   workflow_dispatch:
 jobs:
   code:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: clone the code 
         run: echo " cloning the code "
   build:
-       runs-on: ubuntu_latest
+       runs-on: ubuntu-latest
        steps:
          - name: build using docker
            run: echo"build using docker"
    test:
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
           -name: running testing cases
             run: echo "testing the app"
             
     deploy:
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
             -name: deploying on the machin
               run: echo "deploying the code"
