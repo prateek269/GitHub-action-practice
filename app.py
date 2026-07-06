@@ -1,4 +1,4 @@
-#this code is form github.com/prateek269/GitHub-action-practice/blob/main/app.py
+#this code is form https://github.com/prateek269/GitHub-action-practice/edit/main/app.py
 from flask import Flask, render_template
 app = Flask(__name__)
 
