@@ -1,0 +1,21 @@
+# what is the goal of your workflow
+#  Goal: whenever someone change the pyhon code 
+# the linter will check if the sytax ,format in dentation (linting) is correct or not 
+
+name: auto linter
+
+on:
+  push:
+    paths: "*.py"
+    
+jobs:   
+   code:
+     runs-on: ubuntu-latest
+     steps:
+       - name: checkout/ clone the code 
+         uses: action/checkout@v7
+       - name: Install linter
+         run: pip install ruff
+         
+    
+       
