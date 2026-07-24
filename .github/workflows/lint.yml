@@ -18,6 +18,8 @@ jobs:
 
       - name: Run Ruff
         run: ruff check .
-         
+      -name: check the files for linting
+       run:  ruff check .
+      
     
        
