@@ -1,5 +1,5 @@
 #this code is form https://github.com/LondheShubham153/flask-app-ecs
-#flask app
+# Flask App
 from flask import Flask, render_template
 app = Flask(__name__)
 
